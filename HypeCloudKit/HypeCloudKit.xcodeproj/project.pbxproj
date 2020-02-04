@@ -12,6 +12,8 @@
 		A9C3672D23E9E00D00F92389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3672B23E9E00D00F92389 /* Main.storyboard */; };
 		A9C3672F23E9E00E00F92389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C3672E23E9E00E00F92389 /* Assets.xcassets */; };
 		A9C3673223E9E00E00F92389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3673023E9E00E00F92389 /* LaunchScreen.storyboard */; };
+		A9C3674223E9E66800F92389 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C3674123E9E66800F92389 /* CloudKit.framework */; };
+		A9C3674423E9E6BE00F92389 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3674323E9E6BE00F92389 /* Hype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		A9C3672E23E9E00E00F92389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C3673123E9E00E00F92389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9C3673323E9E00E00F92389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C3673F23E9E64D00F92389 /* HypeCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeCloudKit.entitlements; sourceTree = "<group>"; };
+		A9C3674123E9E66800F92389 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A9C3674323E9E6BE00F92389 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C3674223E9E66800F92389 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				A9C3672423E9E00D00F92389 /* HypeCloudKit */,
 				A9C3672323E9E00D00F92389 /* Products */,
+				A9C3674023E9E66800F92389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +61,7 @@
 		A9C3672423E9E00D00F92389 /* HypeCloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9C3673F23E9E64D00F92389 /* HypeCloudKit.entitlements */,
 				A9C3673A23E9E3C100F92389 /* Views */,
 				A9C3673B23E9E3C800F92389 /* Controllers */,
 				A9C3673C23E9E3D000F92389 /* Models */,
@@ -94,6 +102,7 @@
 		A9C3673C23E9E3D000F92389 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A9C3674323E9E6BE00F92389 /* Hype.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +119,14 @@
 			children = (
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A9C3674023E9E66800F92389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C3674123E9E66800F92389 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +202,7 @@
 			files = (
 				A9C3672623E9E00D00F92389 /* AppDelegate.swift in Sources */,
 				A9C3672823E9E00D00F92389 /* SceneDelegate.swift in Sources */,
+				A9C3674423E9E6BE00F92389 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HypeCloudKit/HypeCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2R26CX5Y9;
-				INFOPLIST_FILE = HypeCloudKit/Info.plist;
+				INFOPLIST_FILE = HypeCloudKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,9 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HypeCloudKit/HypeCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2R26CX5Y9;
-				INFOPLIST_FILE = HypeCloudKit/Info.plist;
+				INFOPLIST_FILE = HypeCloudKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
