@@ -14,6 +14,10 @@
 		A9C3673223E9E00E00F92389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3673023E9E00E00F92389 /* LaunchScreen.storyboard */; };
 		A9C3674223E9E66800F92389 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C3674123E9E66800F92389 /* CloudKit.framework */; };
 		A9C3674423E9E6BE00F92389 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3674323E9E6BE00F92389 /* Hype.swift */; };
+		A9C3674623E9EEA200F92389 /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3674523E9EEA200F92389 /* HypeController.swift */; };
+		A9C3674923E9F00400F92389 /* HypeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3674823E9F00400F92389 /* HypeError.swift */; };
+		A9C3674B23E9F92000F92389 /* HypeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3674A23E9F92000F92389 /* HypeListViewController.swift */; };
+		A9C3676D23EA0D5900F92389 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3676C23EA0D5900F92389 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		A9C3673F23E9E64D00F92389 /* HypeCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeCloudKit.entitlements; sourceTree = "<group>"; };
 		A9C3674123E9E66800F92389 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A9C3674323E9E6BE00F92389 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
+		A9C3674523E9EEA200F92389 /* HypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
+		A9C3674823E9F00400F92389 /* HypeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeError.swift; sourceTree = "<group>"; };
+		A9C3674A23E9F92000F92389 /* HypeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeListViewController.swift; sourceTree = "<group>"; };
+		A9C3676C23EA0D5900F92389 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				A9C3673A23E9E3C100F92389 /* Views */,
 				A9C3673B23E9E3C800F92389 /* Controllers */,
 				A9C3673C23E9E3D000F92389 /* Models */,
+				A9C3674723E9EFE000F92389 /* Helpers+Extensions */,
 				A9C3673923E9E39C00F92389 /* Resources */,
 			);
 			path = HypeCloudKit;
@@ -110,6 +119,7 @@
 		A9C3673D23E9E3E200F92389 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A9C3674523E9EEA200F92389 /* HypeController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -117,6 +127,7 @@
 		A9C3673E23E9E3E800F92389 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A9C3674A23E9F92000F92389 /* HypeListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -127,6 +138,15 @@
 				A9C3674123E9E66800F92389 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9C3674723E9EFE000F92389 /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9C3674823E9F00400F92389 /* HypeError.swift */,
+				A9C3676C23EA0D5900F92389 /* DateExtension.swift */,
+			);
+			path = "Helpers+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C3674923E9F00400F92389 /* HypeError.swift in Sources */,
+				A9C3676D23EA0D5900F92389 /* DateExtension.swift in Sources */,
 				A9C3672623E9E00D00F92389 /* AppDelegate.swift in Sources */,
+				A9C3674B23E9F92000F92389 /* HypeListViewController.swift in Sources */,
+				A9C3674623E9EEA200F92389 /* HypeController.swift in Sources */,
 				A9C3672823E9E00D00F92389 /* SceneDelegate.swift in Sources */,
 				A9C3674423E9E6BE00F92389 /* Hype.swift in Sources */,
 			);
